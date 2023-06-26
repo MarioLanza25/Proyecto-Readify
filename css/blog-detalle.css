@@ -1,0 +1,165 @@
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.line{
+    border-right: 1px solid black;
+    padding-right: 100px;
+}
+
+.nav-P{
+ padding-bottom:1% ;
+ padding-left: 5%;
+}
+
+.headerr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    height: 35px;
+    padding: 15spx 0%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+.headerr .nav-links {
+    list-style: none;
+
+}
+
+.headerr .nav-links li{
+    display: inline-block;
+
+    padding-right: 100px;  
+}
+
+.headerr .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.headerr .nav-links a{
+    font-size: 700;
+    color: black;
+    text-decoration: none;    
+}
+
+.headerr .nav-links li a:hover{
+    color: #00C3FF;
+}
+
+
+.buscador{
+    width: 350px;
+    height: 20px ;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.buscar-c{
+    position: relative;
+}
+
+#icon-b{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.header-text{
+    padding-left: 5%;
+    padding-top: 1%;
+}
+
+.art-principal{
+    padding-top: 2.5%;
+    text-align: center;
+}
+.articulo{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+}
+
+.articulo p{
+    text-align: justify;
+}
+
+
+.articulo-img{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.art-img{
+    width: 40%;
+    padding-left: 10%;
+}
+
+.art-img img{
+    width: 260px;
+    height: 350px;
+}
+
+.art-detalle{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+}
+.compartir{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.compartir-r{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 1%;
+}
+section{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.recomendacion{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.recomendacion-blog{
+    width: 40%;
+    margin: 0% 5% 0% 5%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.recomendacion-blog img{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.recomendacion-detalle{
+    padding: 5%;
+    text-align: justify;
+}
+
+.recomendacion-detalle p{
+
+}
+

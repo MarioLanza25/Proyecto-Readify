@@ -1,0 +1,233 @@
+h1,h2,h3,h4,h5,h5,p,li{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    background-color: #fff;
+    padding-left: 10%;
+    border-bottom: 1px solid black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  nav li {
+    display: inline-block;
+  }
+  
+  nav li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding-right: 100px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav li span {
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%);
+  }
+  
+  nav li:first-child span {
+    display: none;
+  }
+
+  .nombre-empresa{
+  color:#155B86 ;
+  }
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.linea1{
+    border-bottom: 1px solid black;
+    padding-top: 4%;
+}
+
+.indice{
+    width: 49.5%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+input[type="text"]{
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    width: 300px ;
+}
+
+input[type="time"]{
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#cvv-i{
+    width: 150px ;
+}
+
+.btn-aplicar{
+    padding: 7px;
+    background-color: #2E7D32;
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.fecha-cvv{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.fecha{
+    width: 40%;
+}
+
+.cvv{
+    width: 60%;
+}
+.cvv-i{
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    width: 100px;
+}
+
+.rd-paypal{
+    margin-top: 5%;
+}
+
+.btn-guardar{
+    margin-top: 5%;
+    padding: 7px;
+    background-color: #2E7D32;
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+}
+.line{
+    border-right: 2px solid black;
+    width: 1%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.img-car{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+.carrito{
+    width: 49.5%;
+    padding-left: 60px;;
+}
+.libro-carrito{
+    width: 100px;
+    height: 150px;
+}
+
+.total{
+   padding-left: 0%; 
+   display: flex;
+   flex-direction: column;
+}
+
+.sub-total{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15%;
+}
+
+.compra{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.foter{
+    color: #fff;
+    display: flex;
+    padding-top: 1%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #155B86;
+}
+
+@media (max-width: 767px) { 
+    .principal {
+      flex-direction: column;
+    }
+    .carrito{
+        width: 100%;
+        padding: 0% 0% 0% 0%;
+        border-top: 1px solid black;
+    }
+
+    .indice{
+        width: 100%;
+        padding: 0% 0% 0% 0%;
+    }
+
+    nav{
+        text-align: left;
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 480px) { 
+   nav li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+    .principal {
+      flex-direction: column;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .carrito{
+        width: 100%;
+        padding: 0% 0% 0% 0%;
+        border-top: 1px solid black;
+    }
+
+    .indice{
+        width: 100%;
+        padding: 0% 0% 0% 0%;
+    }
+
+    nav{
+        text-align:left;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

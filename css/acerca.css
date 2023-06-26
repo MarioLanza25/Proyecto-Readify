@@ -1,0 +1,176 @@
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.line{
+    border-right: 1px solid black;
+    padding-right: 100px;
+}
+
+.headerr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    height: 35px;
+    padding: 15spx 0%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.nav-P{
+    padding-bottom:2% ;
+    padding-top: 2%;
+   }
+.headerr .nav-links {
+    list-style: none;
+
+}
+
+.headerr .nav-links li{
+    display: inline-block;
+
+    padding-right: 100px;  
+}
+
+.headerr .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.headerr .nav-links a{
+    font-size: 700;
+    color: black;
+    text-decoration: none;    
+}
+
+.headerr .nav-links li a:hover{
+    color: #00C3FF;
+}
+
+
+.buscador{
+    width: 350px;
+    height: 20px ;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.buscar-c{
+    position: relative;
+}
+
+#icon-b{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+
+.header-text{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.fuerzas{
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.img-fuerzas{
+    width: 100%;
+}
+
+.img-f{
+    width: 100%;
+}
+.org{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.acerca-de{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.m-v{
+    width: 50%;
+    height: 100%;
+}
+
+.img-nosotros{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.info-nosotros{
+    width: 50%;
+    padding: 5%;
+    padding-top: 3%;
+    text-align: justify;
+}
+.info-nosotros p{
+    line-height: 2;
+}
+
+
+.e-o{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30%;
+}
+
+.informacion{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.img-informacion{
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+}
+
+.info{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.info-horizontal{
+    display: flex;
+    flex-direction: row;
+    row-gap: 40%;
+    text-align: center;
+    justify-content: left;
+}
+
+.i-i{
+    width: 300px;
+    text-align: left;
+}
+
+.i-d{
+    width: 200px;
+    text-align: left;
+}
+.info-horizontal h4{
+   
+}

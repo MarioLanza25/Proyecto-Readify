@@ -1,0 +1,156 @@
+h1,h2,h3,h4,h5,h5,p,li{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.cabecera{
+    border-left: 1px black;
+}
+
+nav {
+    border-bottom: 1px solid black;
+    padding: 15px 25px;
+
+  }
+.nav1{
+  padding-bottom: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.termino{
+  color: #155B86;
+  border-bottom: 1px solid #155B86;
+  font-weight: bold;
+}
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 70px;
+    font-size: 20px;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding-top: 5px;
+    font-size: 20px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #155B86;
+    color: #fff;
+  }
+  
+  .grande{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .indice{
+  text-align: left;
+  order: 1;
+  width: 30%;
+  padding: 20px;
+  background-color: #a1a1a1;
+  }
+
+  .termino-m{
+    font-family: Arial, sans-serif; 
+    font-size: 18px;
+    margin: 30px;
+  }
+
+  .info{
+    order: 1;
+    width: 70%;
+    text-align: center;
+    padding: 30px;
+    padding-bottom:20px ;
+  }
+  p{
+    text-align: justify;
+    font-family: Arial, sans-serif; 
+    font-size: 16px;
+  }
+  .info li {
+    font-family: Arial, sans-serif; 
+    font-size: 18px;
+    list-style-type: none;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+
+.p-pagina{
+    background-color:#155B86 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.terminos-pies{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.temino-p{
+    display: inline-block;
+    justify-content: center;
+    margin: 100px;
+    padding: 100px;
+}
+
+.texto-pie{
+text-decoration: none;
+color: #fff;
+margin: 60px;
+}
+
+@media (max-width: 767px) { 
+  .grande {
+    flex-direction: column;
+  }
+  .info{
+      width: 100%;
+      padding: 5% 5% 5% 5%;
+      border-top: 1px solid black;
+  }
+
+  .indice{
+      width: 100%;
+      padding: 5% 5% 5% 5%;
+      border: none;
+  }
+
+  nav{
+      text-align: center;
+      padding-left: 5%;
+      padding-right: 5%;
+  }
+
+  .segundo {
+
+    display: none;
+  }
+  .p-pagina ul{
+    flex-direction: column;
+    column-gap: 2%;
+  }
+  .p-pagina{
+    column-gap: 2%;
+  }
+
+}

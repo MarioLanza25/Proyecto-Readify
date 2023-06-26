@@ -1,0 +1,144 @@
+
+.foter{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    background-color: #155B86;
+    padding: 15px 0;
+    padding-left: 20px;
+}
+
+.contendor{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.footer-columna{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5%;
+}
+
+.footer-links{
+    width: 20%;
+    padding: 0 15px;
+}
+
+.footer-links h3{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00C3FF;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #bbb;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 25px;
+    transition: all .3s ease;
+    list-style: none;
+}
+
+.footer-links ul li a:hover{
+    color: #fff;
+    padding-left: 5px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.redes-sociales a{
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2) ;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.redes-sociales a:hover{
+    background-color: #00C3FF;
+}
+@media (max-width: 991px) {
+    .footer-columna{
+        text-align: center;
+    }
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px ;
+    }
+    .footer-links ul li a{
+        text-align: center;
+    }
+}
+.footer-detalle{
+    list-style: none;
+    text-align: start;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+
+.txt-promociones{
+    width: 260px;
+    height: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.input-promociones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-correo{
+    width: 260px;
+    height: 30px;
+    border:1px solid  #91d4e9;
+}
+.input-promociones button{
+    height: 20px;
+}
+#icon-siguiente{
+    font-size: 20px; /* Ajusta este valor según el tamaño deseado */
+    color: white;
+}
+
+.btn-correo{
+    height: 16px;
+    width: 16px;
+    color: #ffffff;
+    padding: 10px 10px;  
+    background-color: #0C3147;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-correo span{
+    color: white;
+}

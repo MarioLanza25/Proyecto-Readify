@@ -1,0 +1,135 @@
+h1,h2,h3,h4,h5,h5,p,li{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+nav{
+    padding-top: 1%;
+}
+#cabecer{
+}
+
+.menu-h:hover .menu-despegable{
+    display: block;
+}
+.nav-links{
+    z-index: 100;
+}
+
+.menu-despegable{
+    z-index: 10;
+}
+
+#m-h:hover .imagenes-p{
+    display: none;
+    padding-top: 50px;
+}
+.menu-despegable{
+    position: absolute;
+    width: 500px;
+    background-color: #fff;
+    display: none;
+}
+
+.menu-despegable li{
+    border: 1px solid black;
+    border-radius:7px;
+    background-color: rgb(223, 223, 223);
+    margin-bottom: 10px;
+}
+.headerr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding: 10px 1%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.headerr .nav-links{
+    list-style: none;
+}
+
+.headerr .nav-links li{
+    display: inline-block;  
+    padding-right: 20px;
+    padding-left: 10px; 
+}
+
+.headerr .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.headerr .nav-links a{
+    font-size: 700;
+    color: black;
+    text-decoration: none;    
+}
+
+.headerr .nav-links li a:hover{
+    color: #00C3FF;
+}
+
+.headerr .btn-crear-cuenta button{
+    font-weight: 700;
+    color: #fff;
+    padding: 9px 25px;
+    background-color: #155B86;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.headerr .btn-crear-cuenta button:hover{
+    background-color: #e2f1f8;
+    color: #00C3FF;
+    transform: scale(1.1);
+}
+
+.btn-crear-cuenta{
+    padding-right: 6%;
+}
+
+.tienes-cuenta{
+    padding-right: 4%;
+}
+
+.buscador{
+    width: 340px;
+    height: 20px ;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.buscar-c{
+    position: relative;
+}
+
+#icon-b{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.m-detalle{
+    font-size: 24px;
+}
+
+@media (max-width: 720px){
+    .nav-links{
+        display: none;
+    }
+    .btn-crear-cuenta{
+        display: none;
+    }
+    .tienes-cuenta li{
+        display: none;
+    }
+    #nombre-empresa{
+        display: block;
+    }
+}

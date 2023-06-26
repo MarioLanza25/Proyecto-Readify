@@ -1,0 +1,297 @@
+.principal{
+    display: flex;
+    flex-direction: column;
+    padding: 1% 5% 1% 5%;
+    gap: 30px;
+
+}
+
+.formulario-login{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .8s;
+    --transform:translateY(-100vh);
+    --transition: transform .8s;
+
+}
+.formulario-login--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform:translateY(0);
+    --transition: .8s .8s ;
+}
+.form-login{
+    margin: auto;
+    width: 90%;
+    max-width: 380px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding-left: 4%;
+    padding-right: 4%;
+    display: grid;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+.categoria-modal-salir{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.modal-close{
+    color: #000000;
+}
+.modal-close:hover{
+    color: crimson;
+}
+.form-login.mostrar{
+    opacity: 1;
+    z-index: 1;
+}
+.formulario-login h1{
+ text-align: center;
+ color: #155B86 ;
+}
+.form-login {
+border: 1px solid black;
+border-radius: 10px;
+padding-left: 20px;
+padding-right: 20px;
+   }
+
+.form-iniciar-cuenta{
+    display:flex;
+    flex-direction: row;
+    column-gap: 50px;
+    text-align: left ;
+}
+
+.form-iniciar-cuenta a{
+ color: black;
+}
+
+.ingreso-datos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.ingreso-datos-correo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ingreso-datos-correo input{
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+}
+.ingreso-datos-contrasena{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingreso-datos-contrasena input{
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+}
+.ingreso-datos-contrasena-verificacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingreso-datos-contrasena-verificacion input{
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.div-continuar{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.div-continuar p{
+text-align: justify;
+}
+.div-continuar u{
+    text-align: center;
+    }
+
+.btn-continuar{
+    background-color: #2E7D32;
+    color: #FFF;
+    border-color:#2E7D32 ;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.inc{
+    text-align: center;
+}
+.formulario-login p{
+    text-align: justify;
+}
+
+
+
+.div-deseo{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.libro-c{
+    width: 30%;
+}
+.libro-carrito{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.info-libro{
+    width: 47%;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+p{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.leer{
+    text-align: lef;
+}
+
+.linea{
+    width: 1%;
+    border-left: 1px solid black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.precio-libro{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+    gap: 10%;
+    text-align: center;
+    border: 1px solid black;
+    margin: 3%;
+    margin-bottom: 7%;
+    margin-top: 7%;
+    border-radius: 10px;
+}
+
+
+.btn{
+    background-color: #2E7D32 ;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    color: #ffff;
+}
+
+.btn-2{
+    background-color: #2E7D32 ;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    color: #ffff;
+}
+
+.cambiar{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    gap: 10px;
+}
+.number{
+    display: flex;
+    background-color: #155B86;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.btn-cambiar{
+    padding-top: 0px;
+    height: 16px;
+    width: 16px;
+    color: #ffffff;  
+    background-color: #fbfeff;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media (max-width: 480px) {
+
+   .navegacion{
+    display: none;
+   }
+   .div-deseo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   }
+   .info-libro{
+    text-align: center;
+   }
+   .div-deseo p{
+    display: none;
+   }
+
+   .precio-libro{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+    gap: 10%;
+    text-align: center;
+    border: 1px solid black;
+    margin: 3%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    border-radius: 10px;
+    }
+    .btn-2{
+        display: none;
+    }
+}
