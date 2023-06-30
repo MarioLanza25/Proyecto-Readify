@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;700&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    color: #155B86;
+}
+
+.img-cerrar{
+    width: 20px;
+    height: 20px;
+    margin-left: 300px;
+ }
+
+.user-images-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagen-camara {
+    margin-right: 40px;
+  }
+  
+  .btn-save,
+  .btn-cancel {
+    width: 85px;
+    height: 35px;
+    color: white;
+    border-style: none;
+    border-radius: 3px;
+  }
+  
+  .btn-save {
+    background-color: #2E7D32;
+    margin-right: 30px;
+    
+  }
+  
+  .btn-cancel {
+    background-color: #B30000;
+  }
+
+  .elemento_titulo{
+    margin-right: 80px;
+
+  }
+
+  .elemento_enlace{
+    margin-top: 15px;
+    font-size: 10px;
+    color: black;
+    font-weight: lighter;
+}
+
+#inputEmail{
+    width: 360px;
+    height: 35px;
+    margin-right: 29px;
+    border-radius: 3px;
+}
+
+#inputEmail::placeholder {
+    text-align: center;
+  }
+
+#inputPassword{
+    width: 360px;
+    height: 35px;
+    border-radius: 3px;
+}
+
+#inputPassword::placeholder {
+    text-align: center;
+  }
+
+#inputRepeatPassword{
+    width: 360px;
+    height: 35px;
+    border-radius: 3px;
+}
+
+#inputRepeatPassword::placeholder {
+    text-align: center;
+  }
+
+ .container-parrafo-politicas{
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .btn-continuar{
+    width: 360px;
+    height: 35px;
+    margin-right: 28px;
+    color: white;
+    border-style: none;
+    border-radius: 3px;
+    background-color: #2E7D32;
+ }
+
+ /* Estilos para los botones */
+.btn-facebook,
+.btn-google,
+.btn-apple {
+  width: 330px;
+  height: 35px;
+  background-color: white; 
+  border: 1px solid black;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+/* Estilos para los íconos */
+.img-icon {
+  vertical-align: middle;
+}
+
+/* Estilos para los contenedores */
+.div-facebook,
+.div-google,
+.div-apple {
+  align-items: center;
+}
+
+.elemento_enlace-lostPassword{
+    margin-top: 5px;
+    margin-right: 180px;
+    font-size: 10px;
+    color: black;
+    font-weight: lighter;
+}
+
+ 
+
