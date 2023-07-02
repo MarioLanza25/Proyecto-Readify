@@ -44,28 +44,42 @@ nav{
     font-size: 20px;
     list-style: none;
 }
+
 #logo-user-abrir:hover .menu-despegable{
     display: block;
 }
 
 .menu-despegable{
+    padding: 0;
     position: absolute;
-    font-size: 16px;
-    width: 150px;
-    background-color: #e3e3e3;
+    font-size: 12px;
+    width: 90px;
+    background-color: #155B86;
     display: none;
+    border-radius: 5px;
 }
-
-.menu-despegable li{
-    margin-bottom: 10px;
+.menu-despegable ul{
     text-align: left;
+}
+.cambiar-contrasena{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.menu-despegable li{
+    padding: 10px;
+    padding: 10px;
+    text-align: left;
+    
 }
 .menu-despegable li{
     display: block;
     text-decoration: none;
+    color: #fff;
 }
 .menu-despegable li:hover{
-    background-color: #000000;
+    background-color: rgb(228, 228, 228);
+    color: #000000;
+    border-radius: 5px;
+
 }
 
 

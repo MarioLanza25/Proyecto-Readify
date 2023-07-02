@@ -35,7 +35,7 @@ p{
 .headerr .nav-links li{
     display: inline-block;
 
-    padding-right: 100px;  
+    padding-right:50px;  
 }
 
 .headerr .nav-links li:hover{
@@ -52,9 +52,11 @@ p{
     color: #00C3FF;
 }
 
-
+.nombre-empresa{
+    color: #155B86;
+}
 .buscador{
-    width: 500px;
+    width: 400px;
     height: 25px ;
     border-radius: 50px;
     text-align: center;
@@ -129,9 +131,7 @@ p{
 .info-ceo{
     padding-left: 60%;
 }
-.info-ceo h5{
 
-}
 .info-mision,.info-vision, .info-liderazgo{
     border-left: 1px solid rgb(94, 93, 93);
     padding-left: 5%;
@@ -152,8 +152,9 @@ p{
     display: inline-block;
     text-align: center;
     width: 100%;
-    background-color: #00C3FF;
+    height: 650px;
 }
+
 
 .img-informacion{
     width: 100%;
@@ -164,18 +165,51 @@ p{
 
 .info{
     position: absolute;
+    width: 100%;
     top: 50%;
-    left: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+    text-align: center;
+}
+.info h3{
+text-align: left;
+margin-left: 20%;
+width: 100%;
 }
 
 .info-horizontal{
     display: flex;
     flex-direction: row;
-    row-gap: 40%;
     text-align: center;
     justify-content: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-bottom: 1px solid white;
+}
+.info-izquierda{
+    text-align: left;
+    width: 50%;
+    margin-right: 10%;
+    
+}
+.info-derecha{
+    text-align: left;
+    width: 50%;
+    
+}
+.buscar-mapa{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 1px solid white;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    width: 100px;
+}
+.buscar-mapa label{
+    color: #fff;
 }
 
 .i-i{
@@ -191,11 +225,50 @@ p{
    
 }
 
+/* Estilos para el mapa*/
+#fuerzas{
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 5%;
+}
+#map {
+    height: 500PX;
+    width: 100%;
+    background-color: #00C3FF;
+  }
+  
+/* Estilos para el video*/
+
+.video-player {
+    width: 100%;
+    height: 20%;
+    position: relative;
+  }
+  
+  #my-video {
+    width: 100%;
+    height: 100%;
+  }
+
+/* Estilos para el los organigrama*/
+#equipo, .organigrama{
+    border-bottom: 1px solid black;
+}
+
+
+
 @media (max-width: 768px) {
-    p{font-size: 12px;
+    .line{
+        border-right: 0px solid black;
+        padding-right: 0px;
     }
-    nav{
+    #nav-acerca-nosotros{
         display: none;
+    }
+    #nav-acerca{
+        display: none;
+    }
+    p{font-size: 14px;
     }
     .org{
         padding-left: 5%;
@@ -217,6 +290,42 @@ p{
     }
     .img-nosotros{
         width: 100%;
+        height: 300px;
+    }
+}
+@media (max-width: 480px){
+    .headerr{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        height: 75px;
+        padding-top: 1%;
+    }
+    .headerr .nav-links li{
+        display: flex;
+
+        padding-right:0px;  
+    }
+    .buscador{
+        width: 110%;
+    }
+    p{font-size: 12px;
+    }
+    .img-nosotros{
+        width: 100%;
         height: 200px;
+    }
+    .info-horizontal{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: left;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-bottom: 1px solid white;
+    }
+    .info-horizontal h4{
+        font-size: 14px;
     }
 }

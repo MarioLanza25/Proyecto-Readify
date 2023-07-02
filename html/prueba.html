@@ -1,12 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Mapa con ubicaciones</title>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-    <button class="probar">a</button>
-    <script src="../nodejs/p.js"></script>
+  <h1>Mapa con ubicaciones</h1>
+  <div id="map"></div>
+
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2Vg3jMkEW45eJtR-Fua7c2T6_hn2eaLI&callback=initMap"></script>
+  <script>
+    function initMap() {
+      // Crear un mapa centrado en una ubicación inicial
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 2,
+        center: {lat: 0, lng: 0}
+      });
+
+      // Crear marcadores para diferentes ubicaciones
+      var ubicaciones = [
+        {nombre: 'Google', lat: 37.4221, lng: -122.0841},
+        {nombre: 'Ferrari', lat: 44.4984, lng: 11.3465},
+        {nombre: 'Honda', lat: 35.6895, lng: 139.6917},
+        {nombre: 'Lamborghini', lat: 45.4449, lng: 10.9703},
+        {nombre: 'Google', lat: 37.4221, lng: -122.0841}, // Estados Unidos
+        {nombre: 'Ferrari', lat: 44.4984, lng: 11.3465}, // Italia
+        {nombre: 'Honda', lat: 35.6895, lng: 139.6917}, // Japón
+        {nombre: 'Lamborghini', lat: 45.4449, lng: 10.9703}, // Italia
+        {nombre: 'Catedral de San Basilio', lat: 55.7520, lng: 37.6175}, // Rusia
+        {nombre: 'Monte Everest', lat: 27.9881, lng: 86.9250}, // Nepal
+        {nombre: 'Opera House', lat: -33.8568, lng: 151.2153}, // Australia
+        {nombre: 'Machu Picchu', lat: -13.1631, lng: -72.5450}, // Perú
+        {nombre: 'Gran Muralla China', lat: 40.4319, lng: 116.5704}, // China
+        {nombre: 'Estatua de la Libertad', lat: 40.6892, lng: -74.0445}, // Estados Unidos
+        {nombre: 'Torre Eiffel', lat: 48.8584, lng: 2.2945}, // Francia
+        {nombre: 'Coliseo Romano', lat: 41.8902, lng: 12.4922}, // Italia
+        {nombre: 'Cristo Redentor', lat: -22.9519, lng: -43.2105}, // Brasil
+        {nombre: 'Templo de Angkor Wat', lat: 13.4125, lng: 103.8660}, // Camboya
+        {nombre: 'Cataratas del Iguazú', lat: -25.6953, lng: -54.4367}, // Argentina
+        {nombre: 'Gran Cañón', lat: 36.1069, lng: -112.1129}, // Estados Unidos
+        {nombre: 'Taj Mahal', lat: 27.1750, lng: 78.0422}, // India
+        {nombre: 'Parque Nacional Kruger', lat: -24.4072, lng: 31.3140}, // Sudáfrica
+        {nombre: 'Puerta de Brandenburgo', lat: 52.5163, lng: 13.3777}, // Alemania
+        {nombre: 'Monte Fuji', lat: 35.3606, lng: 138.7270}, // Japón
+        {nombre: 'México', lat: 23.6345, lng: -102.5528},
+        {nombre: 'Nicaragua', lat: 11.901230 , lng: -86.517255}
+      ];
+
+      ubicaciones.forEach(function(ubicacion) {
+        // Crear un marcador para cada ubicación
+        var marker = new google.maps.Marker({
+          position: {lat: ubicacion.lat, lng: ubicacion.lng},
+          map: map,
+          title: ubicacion.nombre
+        });
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2Vg3jMkEW45eJtR-Fua7c2T6_hn2eaLI&callback=initMap&callback=initMap"></script>
 </body>
 </html>
+
+
+
+
+

@@ -21,9 +21,9 @@
                 <div class="navegacion">
                     <ul class="nav-links">
                         <li><div class="line">
-                            READIFY
+                            <h3 class="nombre-empresa">READIFY</h3>
                         </div> </li>    
-                        <li><a href="acerca-nosotros.html">Acerca de nososotros</a></li>
+                        <li id="nav-acerca-nosotros"><a id="nav-acerca" href="acerca-nosotros.html">Acerca de nososotros</a></li>
                         <li><div class="buscar-c">
                             <input class="buscador" type="text" placeholder="Buscar en el sitio">
                             <i id="icon-b"class="fa-solid fa-magnifying-glass"></i>
@@ -39,19 +39,21 @@
         <div class="header-text">
             <p> <a href="index.html">Inicio</a> / Acerca de nosotros</p>
             <a href=""></a>
+            <h3>Acerca de nosotros</h3>
         </div>
 
-        <div class="fuerzas">
-            <h3>Nuestros fuerzas</h3>
-            <p>Sirviendo a usuarios de todo el mundo a traves de nuestras plataforma en mas de 30 paises</p>
-            <div class="img-fuerza">
-                <img  class="img-f" src="../imagenes/pexels-aaditya-arora-592753.jpg" alt="">
-            </div>
-        </div>
+        
     </header>
     
-
+    
     <section class="org">
+        <div class="video-player">
+            <video id="my-video" controls>
+              <source src="../video/La importancia de leer, para niños.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+
         <article class="acerca-de">
             <div class="m-v">
                 <img class="img-nosotros" src="../imagenes/pexels-andrea-piacquadio-3768894.jpg" alt="">
@@ -61,7 +63,6 @@
                 <p id="texto-mision">Nuestra misión en Readify es proporcionar una plataforma de eReader accesible y fácil de usar para que los lectores puedan disfrutar de su experiencia de lectura digital sin limitaciones. Nos esforzamos por ofrecer la mejor selección de libros electrónicos, una experiencia de lectura sin distracciones y herramientas de personalización para que cada usuario pueda adaptar su experiencia a sus necesidades y preferencias.</p>
             </div>
         </article>
-
         <article class="acerca-de">
             <div class="m-v">
                 <img class="img-nosotros" src="../imagenes/pexels-canva-studio-3153198.jpg" alt="">
@@ -88,23 +89,170 @@
         </article>
 
         <div class="e-o">
-            <div class="equipo">
+            <div id="equipo" class="equipo">
                 <img src="../imagenes/iconos/Organization chart (1).png" alt="">
                 <h5>Equipo directivo</h5>
             </div>
            
-            <div class="organigrama">           
+            <div  class="organigrama">           
                 <img src="../imagenes/iconos//Organization chart.png" alt="">
-                <h5>organigrama</h5>
+                <h5>Organigrama</h5>
             </div>
             
         </div>
+        
     </section>
+    <div id="fuerzas" class="fuerzas">
+        <h3>Nuestros fuerzas</h3>
+        <p>Sirviendo a usuarios de todo el mundo a traves de nuestras plataforma en mas de 30 paises</p>
+        <div id="map">
+            
+        </div>
+    </div>
 
     <div class="informacion">
         <img class="img-informacion" src="../imagenes/pexels-spolyakov-11126979.jpg" alt="" >
-        
+        <div class="info">
+            <h3>Informacion de la empresa</h3>
+            <div class="info-horizontal">
+                <h4 class="info-izquierda">Nombre de la empresa</h4>
+                <h4 class="info-derecha">Readify</h4>
+            </div>
+            <div class="info-horizontal">
+                <h4 class="info-izquierda">Ubicacion de las oficinas</h4>
+                <div class="info-derecha">
+                    <h4>Managua, Nicaragua</h4>
+                    <h4>+505 7715 3823</h4>
+                    <a href="#fuerzas" onclick="obtenerRuta()">
+                        <div class="buscar-mapa">
+                            <img src="../imagenes/iconos/Placeholder.png" alt="">
+                            <label for="">Mapa</label>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="info-horizontal">
+                <h4 class="info-izquierda">Representante</h4>
+                <div class="info-derecha">
+                    <h4>Presidente y CEO</h4>
+                    <h4>Anderson Sanchez</h4>                    
+                </div>
+            </div>
+            <div class="info-horizontal">
+                <h4 class="info-izquierda">Fundado</h4>
+                <h4 class="info-derecha">17 de julio del 2022</h4>
+            </div>
+            <div class="info-horizontal">
+                <h4 class="info-izquierda">Capital</h4>
+                <h4 class="info-derecha">200 millones de dolares (al 30 de enero del 2022)</h4>
+            </div>
+            <div class="info-horizontal">
+                    <h4 class="info-izquierda">Empleados</h4>
+                
+                <div class="info-derecha">
+                    <h4>No consilidados: 8000</h4>
+                    <h4>Consilidados: 8000</h4>
+                    <h4> (al 30 de enero del 2022)</h4>
+                </div>
+               
+            </div>
+            
+        </div>
     </div>
-    
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2Vg3jMkEW45eJtR-Fua7c2T6_hn2eaLI&callback=places"></script>
+    <script>
+    var map;
+    var directionsService;
+    var directionsRenderer;
+    var ubicaciones = [
+        {nombre: 'Readify', lat: 11.901230 , lng: -86.517255},
+        {nombre: 'Google', lat: 37.4221, lng: -122.0841},
+        {nombre: 'Ferrari', lat: 44.4984, lng: 11.3465},
+        {nombre: 'Honda', lat: 35.6895, lng: 139.6917},
+        {nombre: 'Lamborghini', lat: 45.4449, lng: 10.9703},
+        {nombre: 'Google', lat: 37.4221, lng: -122.0841}, // Estados Unidos
+        {nombre: 'Ferrari', lat: 44.4984, lng: 11.3465}, // Italia
+        {nombre: 'Honda', lat: 35.6895, lng: 139.6917}, // Japón
+        {nombre: 'Lamborghini', lat: 45.4449, lng: 10.9703}, // Italia
+        {nombre: 'Catedral de San Basilio', lat: 55.7520, lng: 37.6175}, // Rusia
+        {nombre: 'Monte Everest', lat: 27.9881, lng: 86.9250}, // Nepal
+        {nombre: 'Opera House', lat: -33.8568, lng: 151.2153}, // Australia
+        {nombre: 'Machu Picchu', lat: -13.1631, lng: -72.5450}, // Perú
+        {nombre: 'Gran Muralla China', lat: 40.4319, lng: 116.5704}, // China
+        {nombre: 'Estatua de la Libertad', lat: 40.6892, lng: -74.0445}, // Estados Unidos
+        {nombre: 'Torre Eiffel', lat: 48.8584, lng: 2.2945}, // Francia
+        {nombre: 'Coliseo Romano', lat: 41.8902, lng: 12.4922}, // Italia
+        {nombre: 'Cristo Redentor', lat: -22.9519, lng: -43.2105}, // Brasil
+        {nombre: 'Templo de Angkor Wat', lat: 13.4125, lng: 103.8660}, // Camboya
+        {nombre: 'Cataratas del Iguazú', lat: -25.6953, lng: -54.4367}, // Argentina
+        {nombre: 'Gran Cañón', lat: 36.1069, lng: -112.1129}, // Estados Unidos
+        {nombre: 'Taj Mahal', lat: 27.1750, lng: 78.0422}, // India
+        {nombre: 'Parque Nacional Kruger', lat: -24.4072, lng: 31.3140}, // Sudáfrica
+        {nombre: 'Puerta de Brandenburgo', lat: 52.5163, lng: 13.3777}, // Alemania
+        {nombre: 'Monte Fuji', lat: 35.3606, lng: 138.7270}, // Japón
+        {nombre: 'México', lat: 23.6345, lng: -102.5528}
+        
+    ];
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 2,
+        center: {lat: 0, lng: 0}
+      });
+
+      directionsService = new google.maps.DirectionsService();
+      directionsRenderer = new google.maps.DirectionsRenderer({
+        map: map,
+        suppressMarkers: true
+      });
+
+      agregarMarcadores();
+    }
+
+    function agregarMarcadores() {
+      ubicaciones.forEach(function(ubicacion) {
+        var marker = new google.maps.Marker({
+          position: {lat: ubicacion.lat, lng: ubicacion.lng},
+          map: map,
+          title: ubicacion.nombre
+        });
+      });
+    }
+
+    function obtenerRuta() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          var origen = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+          var destino = new google.maps.LatLng(ubicaciones[0].lat, ubicaciones[0].lng);
+
+          ubicacionActualMarker = new google.maps.Marker({
+            position: origen,
+            map: map,
+            title: 'Ubicación actual'
+          });
+
+          var request = {
+            origin: origen,
+            destination: destino,
+            travelMode: google.maps.TravelMode.DRIVING
+          };
+
+          directionsService.route(request, function(result, status) {
+            if (status == google.maps.DirectionsStatus.OK) {
+              directionsRenderer.setDirections(result);
+            }
+          });
+        });
+
+
+      } else {
+        alert('Tu navegador no soporta la geolocalización.');
+      }
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2Vg3jMkEW45eJtR-Fua7c2T6_hn2eaLI&callback&libraries=places&callback=initMap"></script>
 </body>
+    </body>
 </html>

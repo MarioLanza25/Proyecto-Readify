@@ -26,13 +26,16 @@
                 <h1 class="nombre-empresa">Readify</h1>
                 <h2 class="site-admi">Sitio de administracion</h2>
                 <div>
-                    <i id="logo-user" class="fa-solid fa-user"></i>
-                    <i id="logo-user-abrir" class="fa-solid fa-caret-down">
-                        <ul class="menu-despegable">
-                            <li>Cambiar contrasena</li>
-                            <li>Cerrar sesion</li>
-                        </ul> 
-                    </i>
+                    <ul>
+                        <li id="logo-user-abrir" class="fa-solid fa-user">
+                            <ul class="menu-despegable">
+                                <li class="cambiar-contrasena">Cambiar contrasena</li>
+                                <li>Cerrar sesion</li>
+                            </ul> 
+                        </li>
+                        <li id="logo-user" class="fa-solid fa-caret-down">
+                        </ii>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -52,8 +55,12 @@
                         <input class="text-descripcion" type="text" name="" id="">
                     </div>
                     <div class="div-categoria-crear-descripcion">
-                        <h4>Contrseña</h4>
-                        <input class="text-descripcion" type="text" name="" id="">
+                        <h4>Rol</h4>
+                        <select class="option-rol" name="idioma">
+                            <option value="argentina">Administrador general</option>
+                            <option value="brasil">Gestionador de libros</option>
+                            <option value="chile">Gestionador de categorias</option>
+                          </select>
                     </div>
                     <div class="div-categoria-crear-imagen">
                         <div class="div-categoria-crear-imagen-imagen">
@@ -78,13 +85,13 @@
                 
                 <div class="tabla-categoria-elementos">
                     <h3>Usuario</h3>
-                    <h3 class="indice-descripcion">Contraseña</h3>
+                    <h3 class="indice-descripcion">Rol</h3>
                     <h3>Imagen</h3>
                     <h3>Acciones</h3>
                 </div>
                 <div class="tabla-categoria-elementos-detalle">
                     <label>anderson2002</label>
-                    <label class="descripcion">********</label>
+                    <label class="descripcion">Administrador general</label>
                     <div class="img-tabla-detalle">
                         <img  src="../imagenes/usuario.jpg" alt="">
                     </div>
@@ -96,7 +103,7 @@
                 </div>
                 <div class="tabla-categoria-elementos-detalle">
                     <label>massielA</label>
-                    <label class="descripcion">********</label>
+                    <label class="descripcion">Gestionardor de libros</label>
                     <div class="img-tabla-detalle">
                         <img  src="../imagenes/usuario.jpg" alt="">
                     </div>
@@ -109,7 +116,7 @@
                 <div class="tabla-categoria-elementos-detalle">
                     <label>mateyR2020</label>
                     <label class="descripcion">
-                        ********</label>
+                        Administrador general</label>
                     <div class="img-tabla-detalle">
                         <img  src="../imagenes/usuario.jpg" alt="">
                     </div>
@@ -122,7 +129,7 @@
                 <div class="tabla-categoria-elementos-detalle">
                     <label>brrayanJunior</label>
                     <label class="descripcion">
-                        ********</label>
+                        Gestionador de categorias</label>
                     <div class="img-tabla-detalle">
                         <img  src="../imagenes/usuario.jpg" alt="">
                     </div>
