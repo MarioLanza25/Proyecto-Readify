@@ -8,24 +8,24 @@ h1 {
     color: #155B86;
 }
 
-.img-cerrar{
+.popup .img-cerrar{
     width: 20px;
     height: 20px;
     margin-left: 300px;
  }
 
-.user-images-icons {
+ .popup .user-images-icons {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .imagen-camara {
+  .popup .imagen-camara {
     margin-right: 40px;
   }
   
-  .btn-save,
-  .btn-cancel {
+  .popup .btn-save,
+  .popup .btn-cancel {
     width: 85px;
     height: 35px;
     color: white;
@@ -33,65 +33,65 @@ h1 {
     border-radius: 3px;
   }
   
-  .btn-save {
+  .popup .btn-save {
     background-color: #2E7D32;
     margin-right: 30px;
     
   }
   
-  .btn-cancel {
+  .popup .btn-cancel {
     background-color: #B30000;
   }
 
-  .elemento_titulo{
+  .popup .elemento_titulo{
     margin-right: 80px;
 
   }
 
-  .elemento_enlace{
+  .popup .elemento_enlace{
     margin-top: 15px;
     font-size: 10px;
     color: black;
     font-weight: lighter;
 }
 
-#inputEmail{
+.popup #inputEmail{
     width: 360px;
     height: 35px;
     margin-right: 29px;
     border-radius: 3px;
 }
 
-#inputEmail::placeholder {
+.popup #inputEmail::placeholder {
     text-align: center;
   }
 
-#inputPassword{
+.popup #inputPassword{
     width: 360px;
     height: 35px;
     border-radius: 3px;
 }
 
-#inputPassword::placeholder {
+.popup #inputPassword::placeholder {
     text-align: center;
   }
 
-#inputRepeatPassword{
+  .popup #inputRepeatPassword{
     width: 360px;
     height: 35px;
     border-radius: 3px;
 }
 
-#inputRepeatPassword::placeholder {
+.popup #inputRepeatPassword::placeholder {
     text-align: center;
   }
 
- .container-parrafo-politicas{
+  .popup .container-parrafo-politicas{
     display: flex;
     justify-content: center;
  }
  
- .btn-continuar{
+ .popup .btn-continuar{
     width: 360px;
     height: 35px;
     margin-right: 28px;
@@ -102,9 +102,9 @@ h1 {
  }
 
  /* Estilos para los botones */
-.btn-facebook,
-.btn-google,
-.btn-apple {
+ .popup .btn-facebook,
+ .popup .btn-google,
+ .popup .btn-apple {
   width: 330px;
   height: 35px;
   background-color: white; 
@@ -116,23 +116,47 @@ h1 {
 }
 
 /* Estilos para los íconos */
-.img-icon {
+.popup .img-icon {
   vertical-align: middle;
 }
 
 /* Estilos para los contenedores */
-.div-facebook,
-.div-google,
-.div-apple {
+.popup .div-facebook,
+.popup .div-google,
+.popup .div-apple {
   align-items: center;
 }
 
-.elemento_enlace-lostPassword{
+.popup .elemento_enlace-lostPassword{
     margin-top: 5px;
     margin-right: 180px;
     font-size: 10px;
     color: black;
     font-weight: lighter;
+}
+
+.popup {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 10px 20px;
+  background: #fff;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  transition: top 0ms ease-in-out 200ms,
+              opacity 200ms ease-in-out 0ms,
+              transform 20ms ease-in-out 0ms;
+}
+
+.popup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
 }
 
  
