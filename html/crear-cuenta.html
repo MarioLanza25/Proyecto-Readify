@@ -8,62 +8,78 @@
     <title>Crear cuenta</title>
     <link rel="stylesheet" href="../css/estilos.css" type="text/css" >
     <link rel="stylesheet" href="../css/estilos-textos.css">
+    <link rel="stylesheet" href="../css/crear-cuentaStyle.css">
 
   </head>
 
   <body class="crear cuenta" style="text-align: center;">
+
+    <div class="popup">
+      <div class="close-btn">&times;</div>
     <div class="formulario">
     <form class="form-login">
+      <div style= "justify-content: center;">
         <h1>READIFY</h1>
+      </div>
+      <div class="user-image">
+        <img src="../imagenes/iconos/User image with black background.png" alt="Imagen-usuario">
+      </div> 
+       <div class="user-images-icons">
+        <a href="#"><img src="../imagenes/iconos/Photo camera interface symbol for button.png" alt="Camara" class="imagen-camara"></a>
+        <button class="btn-save">Guardar</button>
+        <button class="btn-cancel">Cancelar</button>
+       </div>
       <div style="display: flex; justify-content: center;">
-        <h2 class="elemento">Crear cuenta</h2>
-        <a class="elemento" id="inicio-s" href="iniciar-sesion.html"><h2>Iniciar sesion</h2></a>
+        <h2 class="elemento_titulo">Crear cuenta</h2>
+        <a class="elemento_enlace" id="inicio-s" href="iniciar-sesion.html"><h2>Iniciar sesion</h2></a>
       </div>
       
       <div class="ingreso-datos">
-        <label for="Email" class="sr-only">Correo electronico </label>
         <input type="email" id="inputEmail" class="form-control" placeholder="Direccion del correo electronico " required autofocus>
-        <img src="../imagenes/iconos/🦆 icon _eye_.png" alt="">
         <br>
         <br>
-        <label for="inputPassword" class="sr-only">Contraseña</label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
-        <img src="../imagenes/iconos/🦆 icon _eye_.png" alt="">
+        <a href="#"><img src="../imagenes/iconos/🦆 icon _eye_.png" alt="" ></a>
         <br>
         <br>
-        <label for="">Contraseña</label>
-        <input type="password" name="" id="" placeholder="Confirmar Contraseña">
-        <img src="../imagenes/iconos/🦆 icon _eye_.png" alt="">
+        <input type="password" name="" id="inputRepeatPassword" placeholder="Confirmar Contraseña">
+        <a href="#"><img src="../imagenes/iconos/🦆 icon _eye_.png" alt="" ></a>
         <br>
         <br>
       </div>
       
-      <p>
-        Al continuar confirmas que aceptas las Condiciones de uso y confirmas que 
-        <br> leído la Politica de privacidad actualizada el 29 de diciembre de 2022.
-      </p>
+      <div class="container-parrafo-politicas">
+        <p class="parrafo-politicas" style="justify-content: center; margin-right: 30px; margin-top: 0px;">
+          Al continuar confirmas que aceptas las <br>Condiciones de uso y confirmas que 
+          leído <br>la Politica de privacidad actualizada el 29 de <br>diciembre de 2022.
+        </p>
+      </div>
       <br>
         <button class="btn-continuar" type="submit">Continuar</button>
-      <br>
-      <br>
+      <div style="display: flex; justify-content: center;">
+        <a class="elemento_enlace-lostPassword" id="inicio-s" href="#"><h2>¿Olvidaste tu contraseña?</h2></a>
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <h2 class="texto-divisor">-------------   o   -------------</h2>
+      </div>
       <div class="div-facebook"><img class="img-icon" src="../imagenes/iconos/🦆 icon _facebook_.png" alt="">
         <button class="btn-facebook" type="submit">Iniciar sesion con facebook</button>
       </div>
-      <br>
       <br>
       <div class="div-google">
         <img class="img-icon" src="../imagenes/iconos/Google.png" alt="">
         <button class="btn-google" type="submit">Iniciar sesion con google</button>
       </div>
       <br>
-      <br>
       <div class="div-apple">
         <img class="img-icon" src="../imagenes/iconos/🦆 icon _apple_.png" alt="">
         <button class="btn-apple" type="submit">Iiniciar sesion con apple</button>
       </div>
       <p>2023 Readify Inc.</p>
-      <p>Este sitio está  protegido , y se aplican su Politicas de privacidad y sus Condiciones de servicio.</p>
+      <p>Este sitio está  protegido , y se aplican su <br>Politicas de privacidad y sus Condiciones de <br>servicio.</p>
     </form>
     </div>
+  </div>
+  <script src="../nodejs/p.js"></script>
   </body>
 </html>
