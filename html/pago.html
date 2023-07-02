@@ -29,7 +29,25 @@
 
             <div class="pais">
                 <h4 class="termino-m"> Pais*</h4>
-                <input class="pais-input" type="text" placeholder="Nicaragua">
+                <select class="option-paises" name="pais">
+                    <option value="argentina">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="chile">Chile</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="china">China</option>
+                    <option value="espana">España</option>
+                    <option value="estados-unidos">Estados Unidos</option>
+                    <option value="francia">Francia</option>
+                    <option value="italia">Italia</option>
+                    <option value="mexico">México</option>
+                    <option value="nicaragua">Nicaragua</option>
+                    <option value="peru">Perú</option>
+                    <option value="uruguay">Uruguay</option>
+                    <!-- Agrega más opciones según tus necesidades -->
+                  </select>
+
+                  
+                  
             </div>
                 
             <div>
@@ -51,7 +69,11 @@
             <div class="fecha-cvv">
                 <div class="fecha">
                     <h4 class="termino-m">Fecha de caducidad</h4>
-                    <input class="termino-m" type="time" placeholder="">
+                    <div class="date-input">
+                        <input class="fechas" type="number" name="dia" min="1" max="31" placeholder="Día" required>
+                        <input class="fechas" type="number" name="mes" min="1" max="12" placeholder="Mes" required>
+                        <input class="fechas" type="number" name="ano" min="1900" max="2100" placeholder="Año" required>
+                      </div>
                 </div>
                 <div class="cvv-i">  
                     <h4 class="termino-m">CVV*</h4>
@@ -64,10 +86,12 @@
 
             </div>
 
-            <div>
-                <i class="fa-brands fa-paypal"></i>
-                <i class="fa-brands fa-cc-paypal"></i>
-                <input class="rd-paypal" type="radio" name="" id=""> Paypal
+            <div class="paypal-pay">
+                
+                
+                <input class="rd-paypal" type="radio" name="" id=""> 
+                <img src="../imagenes/iconos/Paypal.png" alt="">
+                <label for="rd-paypal">Paypal</label>
             </div>
 
             <div>

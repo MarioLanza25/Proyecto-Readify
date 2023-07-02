@@ -113,7 +113,7 @@
         <section class="info-carrito">
             <h3 class="tpp">4 articulos</h3>
 
-            <article class="img-car">
+            <article id="primer-carrito" class="img-car">
                 <div class="libro-c">
                     <img class="libro-carrito"src="../imagenes/galerna-4.jpg" alt="">
                 </div>
@@ -141,7 +141,7 @@
                 </div>
             </article>
 
-            <article class="img-car">
+            <article id="ultimo-articulo" class="img-car">
                 <div class="libro-c">
                     <img class="libro-carrito"src="../imagenes/galerna-4.jpg" alt="">
                 </div>
@@ -163,12 +163,23 @@
 
                 <div class="compra">
                     <a class="seguir-comprando" href="index.html"><h5>Seguir comprando</h5></a>
-                    <a class="btn-pago" href="pago.html"><button class="btn-comprar">Caja</button> </a>
+                    <a onclick="validarCorreo()" class="btn-pago" href="pago.html"><button class="btn-comprar">Caja</button> </a>
                 
                 </div>
-
+                
                 
             </div>
+            <section id="envio-regalo" class="envio-regalo">
+                <div class="checkbox-envio">
+                    <input  type="checkbox" id="miCheckbox">
+                    <label for="miCheckbox">Enviarselo a alguien como regalo</label>
+                </div>
+                <div class="correo-envio">
+                    <label for="">Ingrese la direccion de correo electronico</label>
+                    <input type="email" name="" id="envio-correo">
+                </div>
+                
+            </section>
         </section>
        </div>
     </main>
@@ -224,6 +235,7 @@
 
         </div>
 
-    </footer>                       
+    </footer> 
+    <script src="../nodejs/validaciones.js"></script>                      
 </body>
 </html>

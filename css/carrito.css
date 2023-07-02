@@ -63,8 +63,9 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    padding-top: 10%;
     padding-bottom: 7%;
-    padding-right: 2%;
+    padding-right: 5%;
 }
 .checkbox-envio{
     display: flex;
@@ -141,17 +142,37 @@
 
 }
 
-@media (max-width: 768px) { 
+#envio-regalo{
+    display: none;
+}
+
+#ultimo-articulo{
+    display: none;
+}
+@media (max-width: 768px) {
+    
+    #ultimo-articulo{
+        display: block;
+    }
+    .recomendacion{
+        display: none;
+    } 
     #cabecer{
         display: none;
     }
     .principal {
       flex-direction: column;
+      padding-bottom: 0;
     }
     .carrito{
-        width: 100%;
-        padding: 0% 0% 0% 0%;
-        border-top: 1px solid black;
+
+        width: 80%;
+        padding: 5% 5% 0% 5%;
+        margin-right: 50%;
+        border-top: 0px solid black;
+    }
+    #envio-correo{
+        width: 70%;
     }
     .libro-c{
         width: 100px;
@@ -167,13 +188,13 @@
         border-radius: 30px;
 
     }
-    .info-recomendacion{
-        display: grid;
-        grid-template-columns: 70% 70% 70%;
-        text-align: left;
-    
-    }
+    .img-car{
 
+        gap: 150px;
+        margin-top: 20px;
+
+        padding-bottom: 5px;
+    }
     .indice{
         width: 100%;
         padding: 5% 5% 5% 5%;
@@ -187,7 +208,16 @@
 }
 
 @media (max-width: 480px) { 
-    
+
+    #ultimo-articulo{
+        display: block;
+    }
+    .recomendacion{
+        display: none;
+    }
+    .info-carrito{
+        border-top: none;
+    }
     .line{
         display: none;
     }
@@ -239,7 +269,7 @@
         width: 100%;
         padding-right: 5%;
         padding: 0% 0% 0% 0%;
-        border-top: 1px solid black;
+        border-bottom: 0px;
     }
     .img-car{
 

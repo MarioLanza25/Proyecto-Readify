@@ -92,6 +92,12 @@ input[type="text"]{
     font-weight: bold;
     width: 300px ;
 }
+.option-paises{
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    width: 300px ;
+}
 
 input[type="time"]{
     padding: 5px;
@@ -116,26 +122,50 @@ input[type="time"]{
     display: flex;
     flex-direction: row;
     text-align: left;
+    justify-content: center;
+    align-items: center;
 }
 
 .fecha{
-    width: 40%;
+    width: 60%;
 }
 
 .cvv{
-    width: 60%;
+    width: 40%;
 }
 .cvv-i{
     padding: 5px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    width: 100px;
+    width: 40%;
 }
+#cvv-i{
 
+    width: 80px;
+}
+.date-input{
+    display: flex;
+    flex-direction: row;
+    width: 300%;
+}
+.fechas{
+    width: 42px;
+    height: 30px;
+    margin-right: 5px;
+}
 .rd-paypal{
-    margin-top: 5%;
 }
-
+.paypal-pay{
+    margin-top: 5%;
+    display: flex;
+    align-content:center;
+    align-items: center;
+    column-gap: 10px;
+}
+.paypal-pay image{
+height: 20px;
+width: 20px;
+}
 .btn-guardar{
     margin-top: 5%;
     padding: 7px;
@@ -225,6 +255,12 @@ input[type="time"]{
         padding-left: 10%;
         padding-right: 5%;
     }
+    .option-paises{
+        padding: 5px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        width: 200px ;
+    }
 }
 
 @media (max-width: 480px) { 
@@ -248,6 +284,12 @@ input[type="time"]{
         border-top: 1px solid black;
     }
     #input-codigo{
+        padding: 5px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        width: 200px ;
+    }
+    .option-paises{
         padding: 5px;
         font-family: 'Times New Roman', Times, serif;
         font-weight: bold;
