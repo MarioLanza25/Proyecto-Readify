@@ -1,6 +1,9 @@
 h1,h2,h3,h4,h5,h5,p,li{
     font-family: Arial, Helvetica, sans-serif;
 }
+btn-guardar-otro{
+    display: none;
+}
 nav {
     background-color: #fff;
     padding-left: 10%;
@@ -46,6 +49,22 @@ nav {
 
   .nombre-empresa{
   color:#155B86 ;
+  }
+
+  .nav-linea{
+    padding-right: 10%;
+    border-left: 1px solid rgb(0, 0, 0)!important;
+  }
+
+
+
+
+
+  .nav-obligatorio{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    
   }
 
 .principal{
@@ -139,9 +158,14 @@ input[type="time"]{
     gap: 100px;
     margin-top: 20px;
     border-bottom: 1px solid black;
+    
     padding-bottom: 5px;
 }
+
+
 .carrito{
+    overflow:scroll;
+    overflow-x:hidden;
     width: 49.5%;
     padding-left: 60px;;
 }
@@ -178,13 +202,16 @@ input[type="time"]{
     background-color: #155B86;
 }
 
-@media (max-width: 767px) { 
+@media (max-width: 769px) { 
+
     .principal {
       flex-direction: column;
     }
     .carrito{
         width: 100%;
         padding: 0% 0% 0% 0%;
+        margin-top: 5%;
+        padding-top: 5%;
         border-top: 1px solid black;
     }
 
@@ -201,11 +228,12 @@ input[type="time"]{
 }
 
 @media (max-width: 480px) { 
+
    nav li a {
     display: block;
     color: #000000;
     text-decoration: none;
-    padding-right: 50px;
+    padding-right: 30px;
     font-size: 24px;
     font-weight: bold;
   }
@@ -219,6 +247,26 @@ input[type="time"]{
         padding: 0% 0% 0% 0%;
         border-top: 1px solid black;
     }
+    #input-codigo{
+        padding: 5px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        width: 200px ;
+    }
+    .libro-carrito{
+        width: 80px;
+        height: 130px;
+    }
+    .img-car{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        margin-top: 20px;
+        border-bottom: 1px solid black;
+        
+        padding-bottom: 5px;
+    }
+    .total
 
     .indice{
         width: 100%;

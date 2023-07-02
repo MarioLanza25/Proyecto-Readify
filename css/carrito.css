@@ -58,6 +58,38 @@
 
 
 
+
+.envio-regalo{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-bottom: 7%;
+    padding-right: 2%;
+}
+.checkbox-envio{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+#miCheckbox{
+    width: 20px;
+    height: 20px;
+}
+.correo-envio{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.correo-envio input[type="email"]{
+    width: 100%;
+    border-radius: 5px;
+    height: 30px;
+}
+
+
+
+
+
 .img-car{
     display: flex;
     flex-direction: row;
@@ -109,7 +141,7 @@
 
 }
 
-@media (max-width: 767px) { 
+@media (max-width: 768px) { 
     #cabecer{
         display: none;
     }
@@ -155,7 +187,25 @@
 }
 
 @media (max-width: 480px) { 
-   
+    
+    .line{
+        display: none;
+    }
+    .principal{
+        display: flex;
+    }
+    .carrito{
+        order: 1;
+    }
+    .envio-regalo{
+        order: 2;
+    }
+    .re-car{
+        display: none;
+    }
+    .tpp-uso{
+        display: none;
+    }
     .recomendacion{
         width: 100%;
     }
@@ -193,7 +243,7 @@
     }
     .img-car{
 
-        gap: 70px;
+        gap: 50px;
         margin-top: 20px;
 
         padding-bottom: 5px;
@@ -202,7 +252,29 @@
         width: 80px;
         height: 120px;
     }
-
+    .total{
+        padding-left: 0%; 
+     }
+     .sub-total{
+        padding-left: 35%;
+     }
+    .compra{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+    .seguir-comprando{
+        text-align: left;
+        width: 100%;
+        text-decoration: underline;
+    }
+    .compra button{
+        min-width: 300px;
+        border-radius: 10px;
+    }
+    .btn-pago{
+    }
     .indice{
         width: 100%;
         padding: 0% 0% 0% 0%;

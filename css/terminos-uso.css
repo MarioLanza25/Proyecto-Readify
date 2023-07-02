@@ -6,10 +6,14 @@ h1,h2,h3,h4,h5,h5,p,li{
   padding: 0;
   box-sizing: border-box;
 }
+.nombre-empresa{
+  color: #155B86;
+}
+#menu{
 
-
-.cabecera{
-    border-left: 1px black;
+}
+#cabecera{
+   
 }
 
 nav {
@@ -17,10 +21,19 @@ nav {
     padding: 15px 25px;
 
   }
+#nav-sti{
+    padding-bottom: 2%;
+   
+}
+  .p-pagina{
+    position: relative;
+  }
 .nav1{
   padding-bottom: 5px;
   font-weight: bold;
   text-transform: uppercase;
+}
+.nav2{
 }
 .termino{
   color: #155B86;
@@ -54,30 +67,46 @@ nav {
   
   .grande{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
   }
 
   .indice{
-  text-align: left;
-  order: 1;
-  width: 30%;
-  padding: 20px;
-  background-color: #a1a1a1;
+    position:sticky;
+    top: 0;
+    
+    text-align: left;
+    width: 35%;
+    height: 100%;
+    padding: 20px;
   }
+  #indice-atras{
+    text-decoration: none;
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    width: 100px;
+    text-align: center;
 
+}
+  .indice li a{
+    text-decoration: none;
+    color: #000000;
+        }
+  .info{
+    border-left: 1px solid black;
+    width: 65%;
+    text-align: center;
+    padding-left:5%;
+    padding-right: 5%;
+    margin-top:2%; 
+    margin-bottom:2%; 
+  }
   .termino-m{
     font-family: Arial, sans-serif; 
     font-size: 18px;
     margin: 30px;
   }
 
-  .info{
-    order: 1;
-    width: 70%;
-    text-align: center;
-    padding: 30px;
-    padding-bottom:20px ;
-  }
+ 
   p{
     text-align: justify;
     font-family: Arial, sans-serif; 
@@ -120,19 +149,35 @@ margin: 60px;
 }
 
 @media (max-width: 767px) { 
+  .nav1{
+    display: flex;
+    flex-direction: row;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  nav ul li a {
+
+  }
+  
+
   .grande {
+    display: flex;
     flex-direction: column;
   }
   .info{
       width: 100%;
       padding: 5% 5% 5% 5%;
-      border-top: 1px solid black;
   }
 
   .indice{
+    position: relative;
       width: 100%;
       padding: 5% 5% 5% 5%;
       border: none;
+      background-color: #a5a5a5;
   }
 
   nav{
@@ -151,6 +196,32 @@ margin: 60px;
   }
   .p-pagina{
     column-gap: 2%;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .terminos-pies{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .termino-p{
+    width: 90%;
+    border-bottom: 1px solid black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  #pie-pagina-termino-uso{
+    border: none;
   }
 
+}
+
+@media (max-width: 767px) { 
+nav ul li {
+  margin-right: 35px;
+}
 }

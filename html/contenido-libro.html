@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido del libro</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/contenido-libro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="nav-admin">
+            <div class="icono-menu">
+                <i id="icono-menu" class="fa-solid fa-bars ls"></i>  
+            </div>
+            <div id="menu" class="cont-menu active">
+                <ul>
+                    <li class="link-admi"><a class="link-administrador" href="../html/usuario.html">Administradores</a> </li>
+                    <li><a  class="link-categoria"href="../html/categoria-libros.html">Categorias</a> </li>
+                    <li><a  class="link-libro"href="../html/libro.html">Libros</a> </li>
+                </ul>
+            </div>
+            <div class="nav-encabezado" >
+                <h1 class="nombre-empresa">Readify</h1>
+                <h2 class="site-admi">Sitio de administracion</h2>
+                <div>
+                    <i id="logo-user" class="fa-solid fa-user"></i>
+                    <i id="logo-user-abrir" class="fa-solid fa-caret-down">
+                        <ul class="menu-despegable">
+                            <li>Cambiar contrasena</li>
+                            <li>Cerrar sesion</li>
+                        </ul> 
+                    </i>
+                </div>
+            </div>
+        </nav>
+        <div class="div-categoria">
+            <section class="modal">
+                <form id="categoria-modal" class="div-categoria-crear">
+                    <div class="categoria-modal-salir">
+                        <h2>Crear administrador</h2>
+                        <a class="modal-close"  href="#a"><i  class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <label>Crear nuevo administrador</label>
+                    <div class="div-categoria-crear-nombre">
+                        <h3>Usuario</h3>
+                        <input class="text-nombre" type="text" name="" id="">
+                    </div>
+                    <div class="div-categoria-crear-descripcion">
+                        <h3>Contraseña</h3>
+                        <input class="text-descripcion" type="text" name="" id="">
+                    </div>
+                    <div class="div-categoria-crear-descripcion">
+                        <h3>Contrseña</h3>
+                        <input class="text-descripcion" type="text" name="" id="">
+                    </div>
+                    <div class="div-categoria-crear-imagen">
+                        <div class="div-categoria-crear-imagen-imagen">
+                            <img src="../imagenes/usuario.jpg" alt="">
+                        </div>
+                        <div class="categoria-btn-subir">
+                            <button class="btn-subir-icono">Subir</button>
+                        </div>
+                        
+                    </div>
+                    <div class="div-categoria-crear-guardar">
+                        <input class="btn-continuar" type="button" value="Guardar">
+                    </div>
+                    
+                </form>
+            </section>
+            
+        </div>
+
+        <div class="ingresar-libro">
+            <h2>Ingresar libro</h2>
+            <div class="contenido-detalle">
+                <div class="contenido">
+                    <h4>Contenido del eBook</h4>
+                    <label for="">En proceso...</label>
+                </div>
+                <div class="detalle">
+                    <h4>Detalle del eBook</h4>
+                    <label for="">No iniciado...</label>
+                </div>
+
+            </div>
+            <div class="ingresar-datos">
+                <div class="ingresar-idioma">
+                    <div class="titulo">
+                        <h3>Idioma</h3>
+                    </div>
+                    <div class="titulo2">
+                        <label for="">Elija el idioma principal del eBook (idioma en el que se escribió el libro).</label>
+                        <select class="option-idioma" name="idioma">
+                            <option value="argentina">Español</option>
+                            <option value="brasil">Ingles</option>
+                            <option value="chile">Frances</option>
+                            <option value="colombia">Italiano</option>
+                            <option value="colombia">Chino</option>
+                            <!-- Agrega más opciones según tus necesidades -->
+                          </select>
+                    </div>
+                    
+                </div>
+                <div class="ingresar-titulo">
+                    <div class="titulo">
+                        <h3>Titulo</h3>
+                    </div>
+                    <div class="titulo2">
+                        <label for="">Escriba el título tal y como aparece en la portada del libro. Este campo no se puede actualizar una vez que el libro se haya publicado..</label>
+                        <label for="">Titulo del libro</label>
+                        <input type="text" name="" id="">
+                        <label class="subtitulo" for="">Subtitulo (Opcional)</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    
+                </div>
+                <div class="ingresar-autor">
+                    <div class="titulo">
+                        <h3>Autor</h3>
+                    </div>
+                    <div class="titulo2">
+                        <label for="">Indique el autor o colaborador principal. Se permiten los seudónimos. </label>
+                        <label for="">Autor</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    
+                </div>
+                <div class="ingresar-descripcion">
+                    <div class="titulo">
+                        <h3>Descripción</h3>
+                    </div>
+                    <div class="titulo2">
+                        <label for="">Puede resumir el libro. Esta será la descripción del producto que los clientes verán en Readify para saber más sobre el libro.</label>
+                        <input  type="text" name="" id="text-descripcion">
+                        <div id="ingresar-descripcion-caracteres" class="ingresar-descripcion-caracteres">
+                            <h4>1000</h4>
+                            <label for="">Carateres restantes</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="ingresar-categoria">
+                    <div class="titulo">
+                        <h3>Categorias</h3>
+                    </div>
+                    <div class="titulo2">
+                        <label for="">Elija hasta 2 categorías de búsqueda</label>
+                        <button>Categorias</button>
+                    </div>
+                    
+                </div>
+                <div class="botones-finales">
+                    <a  href="../html/libro.html"><button class="btn-final-cancelar">Cancelar</button></a>
+                    <a href="../html/contenido-detalle-libro.html"><button class="btn-final-continuar">Guardar y continuar</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer class="foter">
+        <h3>© 2023 Readify Inc.  </h3>
+
+    </footer>
+    <script src="../nodejs/libro.js"></script>
+</body>
+</html>

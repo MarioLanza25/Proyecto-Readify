@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/libro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="nav-admin">
+            <div class="icono-menu">
+                <i id="icono-menu" class="fa-solid fa-bars"></i>  
+            </div>
+            <div id="menu" class="cont-menu active">
+                <ul>
+                    <li class="link-admi"><a class="link-administrador" href="../html/usuario.html">Administradores</a> </li>
+                    <li><a  class="link-categoria"href="../html/categoria-libros.html">Categorias</a> </li>
+                    <li><a  class="link-libro"href="../html/libro.html">Libros</a> </li>
+                </ul>
+            </div>
+            <div class="nav-encabezado" >
+                <h1 class="nombre-empresa">Readify</h1>
+                <h2 class="site-admi">Sitio de administracion</h2>
+                <div>
+                    <i id="logo-user" class="fa-solid fa-user"></i>
+                    <i id="logo-user-abrir" class="fa-solid fa-caret-down">
+                        <ul class="menu-despegable">
+                            <li>Cambiar contrasena</li>
+                            <li>Cerrar sesion</li>
+                        </ul> 
+                    </i>
+                </div>
+            </div>
+        </nav>
+        <div class="div-categoria">
+            <section class="modal">
+                <form id="categoria-modal" class="div-categoria-crear">
+                    <div class="categoria-modal-salir">
+                        <h2>Crear administrador</h2>
+                        <a class="modal-close"  href="#a"><i  class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <label>Crear nuevo administrador</label>
+                    <div class="div-categoria-crear-nombre">
+                        <h3>Usuario</h3>
+                        <input class="text-nombre" type="text" name="" id="">
+                    </div>
+                    <div class="div-categoria-crear-descripcion">
+                        <h3>Contraseña</h3>
+                        <input class="text-descripcion" type="text" name="" id="">
+                    </div>
+                    <div class="div-categoria-crear-descripcion">
+                        <h3>Contrseña</h3>
+                        <input class="text-descripcion" type="text" name="" id="">
+                    </div>
+                    <div class="div-categoria-crear-imagen">
+                        <div class="div-categoria-crear-imagen-imagen">
+                            <img src="../imagenes/usuario.jpg" alt="">
+                        </div>
+                        <div class="categoria-btn-subir">
+                            <button class="btn-subir-icono">Subir</button>
+                        </div>
+                        
+                    </div>
+                    <div class="div-categoria-crear-guardar">
+                        <input class="btn-continuar" type="button" value="Guardar">
+                    </div>
+                    
+                </form>
+            </section>
+            <div class="tabla-categoria">
+                <div class="tabla-categoria-agregar">
+                    <h2>Libros</h2>
+                    <a href="../html/contenido-libro.html"><button id="btn-modal" class="agregar-categoria">Agregar</button></a>
+                </div>
+                
+                <div class="tabla-categoria-elementos">
+                    <h3>Titulo</h3>
+                    <h3 id="tabla-autor" class="indice-descripcion">Autor</h3>
+                    <h3 class="indice-descripcion">Categoria</h3>
+                    <h3 class="indice-descripcion">Precio</h3>
+                    <h3 >Portada</h3>
+                    <h3>Acciones</h3>
+                </div>
+                <div class="tabla-categoria-elementos-detalle">
+                    <label>Galerna</label>
+                    <label class="descripcion">Peru Camara</label>
+                    <label id="categoria-libro" class="descripcion">Misterio</label>
+                    <label id="categoria-libro" class="descripcion">$ 9.99</label>
+                    <div class="img-tabla-detalle">
+                        <img  src="../imagenes/galerna-4.jpg" alt="">
+                    </div>
+                    
+                    <div class="tabla-categoria-elementos-acciones">
+                        <i id="tabla-icono-editar" class="fa-solid fa-pen"></i>
+                        <i id="tabla-icono-delete" class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                <div class="tabla-categoria-elementos-detalle">
+                    <label>La pelea</label>
+                    <label class="descripcion">Graid Groeschel</label>
+                    <label id="categoria-libro" class="descripcion">Acción</label>
+                    <label id="categoria-libro" class="descripcion">$ 8.99</label>
+                    <div class="img-tabla-detalle">
+                        <img  src="../imagenes/pelea-1 1.png" alt="">
+                    </div>
+                    
+                    <div class="tabla-categoria-elementos-acciones">
+                        <i id="tabla-icono-editar" class="fa-solid fa-pen"></i>
+                        <i id="tabla-icono-delete" class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                <div class="tabla-categoria-elementos-detalle">
+                    <label>La desconocida</label>
+                    <label class="descripcion">
+                        Rosa Montero</label>
+                    <label id="categoria-libro" class="descripcion">Misterio</label>
+                    <label id="categoria-libro" class="descripcion">$ 5.49</label>
+                    <div class="img-tabla-detalle">
+                        <img  src="../imagenes/la-desconocida-11 1.png" alt="">
+                    </div>
+                    
+                    <div class="tabla-categoria-elementos-acciones">
+                        <i id="tabla-icono-editar" class="fa-solid fa-pen"></i>
+                        <i id="tabla-icono-delete" class="fa-solid fa-trash"></i>
+                    </div>
+                </div>  
+                <div class="tabla-categoria-elementos-detalle">
+                    <label>La familia</label>
+                    <label class="descripcion">
+                        Sara Mesa</label>
+                    <label id="categoria-libro" class="descripcion">Familia</label>
+                    <label id="categoria-libro" class="descripcion">$ 6.49</label>
+                    <div class="img-tabla-detalle">
+                        <img  src="../imagenes/la-familia-13 (1).jpg" alt="">
+                    </div>
+                    
+                    <div class="tabla-categoria-elementos-acciones">
+                        <i id="tabla-icono-editar" class="fa-solid fa-pen"></i>
+                        <i id="tabla-icono-delete" class="fa-solid fa-trash"></i>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </header>
+    <footer class="foter">
+        <h3>© 2023 Readify Inc.  </h3>
+
+    </footer>
+    <script src="../nodejs/libro.js"></script>
+</body>
+</html>
