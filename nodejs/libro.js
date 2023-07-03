@@ -20,9 +20,8 @@ function validar() {
 }
 const btnGuardar = document.querySelector('.btn-final-continuar');
 btnGuardar.addEventListener('click',(e)=>{
-  e.preventDefault();
   validar();
-  validarVacio();
+  validarVacio()
 });
 
 function validarVacio() {

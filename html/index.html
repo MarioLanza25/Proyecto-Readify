@@ -27,11 +27,13 @@
                             </div></li>
                             <li><a href="deseos.html">Lista de deseos</a></li>
                             <li  class="fa-solid fa-heart"></li>
+                            <li><a href="mis-libros.html">Mis libros</a></li>
+                            
+                            <li class="fa-sharp fa-solid fa-book"></li>
                             
                             <li><a href="carrito.html">Carrito</a></li>
                             <li class="fa-solid fa-cart-shopping"></li>
-                            <li><a  href="">Idioma</a></li>
-                            <li class="fa-solid fa-globe"></li>
+                            
                         </ul>
     
                     </div class="btn-cuenta">
@@ -44,7 +46,7 @@
                     <div class="navegacion">
                         <ul class="nav-links">
  
-                            <li id="m-h" class="menu-h">Audiolibros
+                            <li id="m-h" class="menu-h">Ebooks
                                 <ul class="menu-despegable">
                                     <li>Miedo</li>
                                     <li>Historias</li>
@@ -57,19 +59,10 @@
                                 </ul>
                             </li>
                             <li class="fa-solid fa-chevron-down"></li>
-                            <li class="menu-h">Ebooks
-                                <ul class="menu-despegable">
-                                    <li>Miedo</li>
-                                    <li>Historias</li>
-                                    <li>Aventuras</li>
-                                    <li>Biografias</li>
-                                    <li>Accion</li>
-                                    <li>Memoria</li>
-                                    <li>Infantil</li>
-                                    <li>Educacion</li>
-                                </ul>   
-                            </li>
-                            <li class="fa-solid fa-chevron-down"></li>
+                        
+                            <li><a  href="">Idioma</a></li>
+                            <li class="fa-solid fa-globe"></li>
+                            
             
                         </ul>
                     </div>
@@ -79,8 +72,28 @@
                     </div>
                     
                 </div>
-            </nav>      
-    
+            </nav>
+            <nav id="nav-admin" style="border-bottom: 2px solid black;">
+                
+                <div class="headerr">
+                    <div class="navegacion">
+                        <div class="icono-menu">
+                             
+                        </div>
+                        <ul class="nav-links">
+                            <li id="icono-menu" class="fa-solid fa-bars"></li> 
+                            <li>Readify</li>
+                            <li><div class="buscar-c">
+                                <input class="buscador" type="text" placeholder="Buscar en readify">
+                                <i id="icon-b"class="fa-solid fa-magnifying-glass"></i>
+                            </div></li>
+                            
+                            <li class="fa-solid fa-cart-shopping"></li>
+                            
+                        </ul>
+                </div>
+                      
+            </nav>     
             <div class="imagenes-p">
 
                 <div class="container">
@@ -88,19 +101,7 @@
                         <div class="info-centrada">     
                             <h1>LEE UN LIBRO, VIVE MIL VIDAS</h1>
                             <div class="btn-e">
-                                <a class="btn-explo" href="iniciar-sesion.html">Descubrelo</a> 
-                            </div>
-                        </div>
-                    
-                    </div>
-                </div>
-        
-                <div class="container">
-                    <div class="image2">
-                        <div class="info-centrada">     
-                            <h1>LEE UN LIBRO, VIVE MIL VIDAS</h1>
-                            <div class="btn-e">
-                                <a class="btn-explo" href="iniciar-sesion.html">Explora</a> 
+                                <a class="btn-explo" href="#">Descubrelo</a> 
                             </div>
                         </div>
                     
@@ -108,6 +109,7 @@
                 </div>
                   
             </div>
+            
         </header>
         
         <div class="text-entrada">
@@ -547,17 +549,16 @@
                 </div>
             </div>
         </section>
-        <section>
 
-        </section>
+    </section>
     </div>
     <footer class="foter">
 
         <div class="contenedor">
-
+    
             <div class="footer-columna">
-
-                <div class="footer-links">
+    
+                <div id="f-sobre-nosotros" class="footer-links">
                     <h3>Sobre nosotros</h3>
                     <ul class="footer-detalle">
                         <li style=><a href="acerca-nosotros.html">Acerca de nosotros</a></li>
@@ -565,22 +566,15 @@
                         <li><a href="privacidad.html">Politicas de privacidad</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
+                <div id="f-ayuda-rapida" class="footer-links">
                     <h3>Ayuda rapida</h3>
                     <ul class="footer-detalle">
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="preuntas-frecuentes.html">Preguntas frecuentes</a></li>
+                      <li><a href="preuntas-frecuentes.html">Preguntas frecuentes</a></li>
+                        <li><a href="#">+505 7715 3823</a></li>
+                        
                     </ul>
-                </div>
-                <div class="footer-links">
-                    <h3>Compra por categoría</h3>
-                    <ul class="footer-detalle">
-                        <li><a href="">eBooks</a></li>
-                        <li><a href="">Audiolibros</a></li>
-                       
-                    </ul>
-                </div>
-                <div class="footer-links">
+                  </div>
+                <div id="f-promociones" class="footer-links">
                     <h3>Sucribete para recibir promociones y noticias</h3>
                     <div class="input-promociones">
                             <input type="email" name="" id="" class="txt-correo" placeholder="Ingrese su correo">
@@ -589,22 +583,34 @@
                             </div>
                     </div>
                     
-                    <h3>Siguenos en nuestras redes sociales</h3>
-                    <div class="redes-sociales">
+                    <h3 id="redes">Siguenos en nuestras redes sociales</h3>
+                    <div id="redes" class="redes-sociales">
                         <a href=""><i class="fab fa-facebook"></i></a>
                         <a href=""><i class="fab fa-instagram"></i></a>
                         <a href=""><i class="fab fa-twitter"></i></a>
                     </div>
-
+    
                 </div>
-
+    
+                <div id="f-redes-sociales" class="footer-links">
+                  <h3>Redes sociales</h3>
+                  <div class="redes-sociales">
+                      <a href=""><i class="fab fa-facebook"></i></a>
+                      <a href=""><i class="fab fa-instagram"></i></a>
+                      <a href=""><i class="fab fa-twitter"></i></a>
+                  </div>
+    
+              </div>
+    
             </div>
-
+    
         </div>
-
+    
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>    
+    <script></script>
+    <script src="../nodejs/main.js"></script>
 </body>
-<script src="../nodejs/p.js"></script>   
+ 
 </html>

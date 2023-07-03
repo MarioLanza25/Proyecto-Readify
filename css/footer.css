@@ -3,12 +3,11 @@
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
     background-color: #155B86;
-    padding: 15px 0;
-    padding-left: 20px;
+    padding-left: 10%;
 }
 
 .contendor{
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     
 }
@@ -16,12 +15,12 @@
 .footer-columna{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 5%;
+    padding-bottom: 2%;
 }
 
 .footer-links{
-    width: 20%;
-    padding: 0 15px;
+    width: 30%;
+    padding: 0 0px;
 }
 
 .footer-links h3{
@@ -71,18 +70,7 @@
 .redes-sociales a:hover{
     background-color: #00C3FF;
 }
-@media (max-width: 991px) {
-    .footer-columna{
-        text-align: center;
-    }
-    .footer-links{
-        width: 100%;
-        margin-bottom: 30px ;
-    }
-    .footer-links ul li a{
-        text-align: center;
-    }
-}
+
 .footer-detalle{
     list-style: none;
     text-align: start;
@@ -107,8 +95,9 @@
 
 .input-promociones{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
 }
 
 .txt-correo{
@@ -141,4 +130,74 @@
 
 .btn-correo span{
     color: white;
+}
+#f-redes-sociales{
+    display: none;
+}
+@media (max-width: 768px) {
+    .foter{
+        padding: 0;
+    }
+    #redes{
+        display: none;
+    }
+    #f-redes-sociales{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .footer-columna{
+        text-align: center;
+    }
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px ;
+    }
+    .footer-links ul li a{
+        text-align: center;
+    }
+    .footer-detalle{
+        display: none;
+    }
+    .footer-links h3{
+        font-size: 14px;
+        margin-bottom: 0px;
+        font-weight: 300;
+        border-bottom: 0px solid #00C3FF;
+ 
+    }
+    #f-promociones{
+
+        display: none;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer-links{
+        border-bottom: 1px solid white;
+    }
+    #f-redes-sociales{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-bottom:  none;
+        padding: 0;
+        margin: 0;
+    }
+    #f-sobre-nosotros{
+        padding: 0;
+        margin: 0;
+    }
+    .redes-sociales a{
+        background-color: #155B86 ;
+        text-align: center;
+        color: #fff;
+        transition: all .5s ease;
+    }
+    #f-ayuda-rapida{
+        margin: 0;
+        padding: 0;
+    }
 }

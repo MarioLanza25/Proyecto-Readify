@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis libros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/mis-libros.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+<body>
+  <div id="cabecer">
+    <nav style="border-bottom: 2px solid black;">
+        <div class="headerr">
+            <div class="navegacion">
+                <ul class="nav-links">
+                    <li>Readify</li>
+                    <li><div class="buscar-c">
+                        <input class="buscador" type="text" placeholder="Buscar en readify">
+                        <i id="icon-b"class="fa-solid fa-magnifying-glass"></i>
+                    </div></li>
+                    <li><a href="deseos.html">Lista de deseos</a></li>
+                    <li  class="fa-solid fa-heart"></li>
+                    <li><a href="mis-libros.html">Mis libros</a></li>
+                    
+                    <li class="fa-sharp fa-solid fa-book"></li>
+                    
+                    <li><a href="carrito.html">Carrito</a></li>
+                    <li class="fa-solid fa-cart-shopping"></li>
+                    
+                </ul>
+
+            </div class="btn-cuenta">
+            <a id="btn-iniciar-sesion" class="btn-crear-cuenta" href="crear-cuenta.html?modal=true"><button class="btn-crear">Crear cuenta</button></a>
+            <script src="../nodejs/p.js"></script>
+            
+            </div >
+
+        <div class="headerr">
+            <div class="navegacion">
+                <ul class="nav-links">
+
+                    <li id="m-h" class="menu-h">Ebooks
+                        <ul class="menu-despegable">
+                            <li>Miedo</li>
+                            <li>Historias</li>
+                            <li>Aventuras</li>
+                            <li>Biografias</li>
+                            <li>Accion</li>
+                            <li>Memoria</li>
+                            <li>Infantil</li>
+                            <li>Educacion</li>
+                        </ul>
+                    </li>
+                    <li class="fa-solid fa-chevron-down"></li>
+                
+                    <li><a  href="">Idioma</a></li>
+                    <li class="fa-solid fa-globe"></li>
+                    
+    
+                </ul>
+            </div>
+            <div class="tienes-cuenta" style="display: inline-flex; list-style: none;" >
+                <li>Ya tienes cuenta?</li>
+                <li><a href="iniciar-sesion.html?modal=true">Iniciar sesion</a></li>
+            </div>
+            
+        </div>
+    </nav>
+    <nav id="nav-admin" style="border-bottom: 2px solid black;">
+        
+        <div class="headerr">
+            <div class="navegacion">
+                <div class="icono-menu">
+                     
+                </div>
+                <ul class="nav-links">
+                    <li id="icono-menu" class="fa-solid fa-bars"></li> 
+                    <li>Readify</li>
+                    <li><div class="buscar-c">
+                        <input class="buscador" type="text" placeholder="Buscar en readify">
+                        <i id="icon-b"class="fa-solid fa-magnifying-glass"></i>
+                    </div></li>
+                    
+                    <li class="fa-solid fa-cart-shopping"></li>
+                    
+                </ul>
+        </div>
+              
+    </nav>       
+  </div>
+  <header>
+    <div class="buscador-libros">
+      <label for="">Buscar en mis libros</label>
+      <input id="buscar-libro" type="text" placeholder="Buscar en mis libros">
+    </div>
+    <div class="optiones-mostrar">
+        <select class="option-mostrar" name="Estados">
+            <option value="">Mostrar: Todos los articulos (11)</option>
+            <option value="">Mostrar: Sin leer (11)</option>
+            <option value="">Mostrar: Leido (0)</option>
+            <option value="">Mostrar: En curso (0)</option>
+            
+          </select>
+
+          <select class="option-fecha" name="Fecha">
+            <option value="">Fecha de inclusión: Más recientes</option>
+            <option value="">Fecha de inclusión: Más antiguos</option>
+          </select>
+    </div>  
+  </header>
+  <main>
+    
+    <div class="libros">
+
+        <div class="libros-libro">
+            <div class="libro-imagen-info">
+                <div class="libro-imagen">
+                  <img src="../imagenes/galerna-4.jpg" alt="">
+                </div>
+                <div class="libro-info">
+                    <label class="libro-titulo" for="">Galerna</label>
+                    <label for="">Peru Camara</label>
+                    <div class="botones-libros">
+                      <img src="../imagenes/iconos/More.png" alt="">
+                      <img src="../imagenes/iconos/Share.png" alt="">
+                    </div>
+                    <label for="">Sin leer</label>
+                </div>
+            </div>
+            <div class="btn-leer">
+              <button>Leer ahora</button>
+            </div>
+        </div>
+
+        <div class="libros-libro">
+          <div class="libro-imagen-info">
+              <div class="libro-imagen">
+                <img src="../imagenes/la-desconocida-11 1.png" alt="">
+              </div>
+              <div class="libro-info">
+                  <label class="libro-titulo" for="">La desconocida</label>
+                  <label for="">Rosa Montero</label>
+                  <div class="botones-libros">
+                    <img src="../imagenes/iconos/More.png" alt="">
+                    <img src="../imagenes/iconos/Share.png" alt="">
+                  </div>
+                  <label for="">Sin leer</label>
+              </div>
+          </div>
+          <div class="btn-leer">
+            <button>Leer ahora</button>
+          </div>
+      </div>
+
+      <div class="libros-libro">
+        <div class="libro-imagen-info">
+            <div class="libro-imagen">
+              <img src="../imagenes/la-familia-13 (1).jpg" alt="">
+            </div>
+            <div class="libro-info">
+                <label class="libro-titulo" for="">La familia</label>
+                <label for="">Sara Mesa</label>
+                <div class="botones-libros">
+                  <img src="../imagenes/iconos/More.png" alt="">
+                  <img src="../imagenes/iconos/Share.png" alt="">
+                </div>
+                <label for="">Sin leer</label>
+            </div>
+        </div>
+        <div class="btn-leer">
+          <button>Leer ahora</button>
+        </div>
+      </div>
+
+      <div class="libros-libro">
+        <div class="libro-imagen-info">
+            <div class="libro-imagen">
+              <img src="../imagenes/galerna-4.jpg" alt="">
+            </div>
+            <div class="libro-info">
+                <label class="libro-titulo" for="">Galerna</label>
+                <label for="">Peru Camara</label>
+                <div class="botones-libros">
+                  <img src="../imagenes/iconos/More.png" alt="">
+                  <img src="../imagenes/iconos/Share.png" alt="">
+                </div>
+                <label for="">Sin leer</label>
+            </div>
+        </div>
+        <div class="btn-leer">
+          <button>Leer ahora</button>
+        </div>
+    </div>
+
+    <div class="libros-libro">
+      <div class="libro-imagen-info">
+          <div class="libro-imagen">
+            <img src="../imagenes/la-desconocida-11 1.png" alt="">
+          </div>
+          <div class="libro-info">
+              <label class="libro-titulo" for="">La desconocida</label>
+              <label for="">Rosa Montero</label>
+              <div class="botones-libros">
+                <img src="../imagenes/iconos/More.png" alt="">
+                <img src="../imagenes/iconos/Share.png" alt="">
+              </div>
+              <label for="">Sin leer</label>
+          </div>
+      </div>
+      <div class="btn-leer">
+        <button>Leer ahora</button>
+      </div>
+  </div>
+
+  <div class="libros-libro">
+    <div class="libro-imagen-info">
+        <div class="libro-imagen">
+          <img src="../imagenes/galerna-4.jpg" alt="">
+        </div>
+        <div class="libro-info">
+            <label class="libro-titulo" for="">Galerna</label>
+            <label for="">Peru Camara</label>
+            <div class="botones-libros">
+              <img src="../imagenes/iconos/More.png" alt="">
+              <img src="../imagenes/iconos/Share.png" alt="">
+            </div>
+            <label for="">Sin leer</label>
+        </div>
+    </div>
+    <div class="btn-leer">
+      <button>Leer ahora</button>
+    </div>
+</div>
+
+<div class="libros-libro">
+  <div class="libro-imagen-info">
+      <div class="libro-imagen">
+        <img src="../imagenes/la-desconocida-11 1.png" alt="">
+      </div>
+      <div class="libro-info">
+          <label class="libro-titulo" for="">La desconocida</label>
+          <label for="">Rosa Montero</label>
+          <div class="botones-libros">
+            <img src="../imagenes/iconos/More.png" alt="">
+            <img src="../imagenes/iconos/Share.png" alt="">
+          </div>
+          <label for="">Sin leer</label>
+      </div>
+  </div>
+  <div class="btn-leer">
+    <button>Leer ahora</button>
+  </div>
+</div>
+
+  <div class="libros-libro">
+    <div class="libro-imagen-info">
+        <div class="libro-imagen">
+          <img src="../imagenes/la-familia-13 (1).jpg" alt="">
+        </div>
+        <div class="libro-info">
+            <label class="libro-titulo" for="">La familia</label>
+            <label for="">Sara Mesa</label>
+            <div class="botones-libros">
+              <img src="../imagenes/iconos/More.png" alt="">
+              <img src="../imagenes/iconos/Share.png" alt="">
+            </div>
+            <label for="">Sin leer</label>
+        </div>
+    </div>
+    <div class="btn-leer">
+      <button>Leer ahora</button>
+    </div>
+  </div>
+
+      <div id="libros-libro-ultimo" class="libros-libro">
+        <div class="libro-imagen-info">
+            <div class="libro-imagen">
+              <img src="../imagenes/la-institutriz-silenciosa 1.png" alt="">
+            </div>
+            <div class="libro-info">
+                <label class="libro-titulo" for="">La intitruiz silenciosa</label>
+                <label for="">Julie Klassen</label>
+                <div class="botones-libros">
+                  <img src="../imagenes/iconos/More.png" alt="">
+                  <img src="../imagenes/iconos/Share.png" alt="">
+                </div>
+                <label for="">Sin leer</label>
+            </div>
+        </div>
+        <div class="btn-leer">
+          <button>Leer ahora</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="cambiar-pagina">
+      <img src="../imagenes/iconos/Vector.png" alt="">
+      <label  for="">1</label>
+      <img src="../imagenes/iconos/🦆 icon _chevron right_.png" alt="">
+    </div>
+  </main>
+  <footer class="foter">
+
+    <div class="contenedor">
+
+        <div class="footer-columna">
+
+            <div id="f-sobre-nosotros" class="footer-links">
+                <h3>Sobre nosotros</h3>
+                <ul class="footer-detalle">
+                    <li style=><a href="acerca-nosotros.html">Acerca de nosotros</a></li>
+                    <li><a href="terminos-uso.html">Terminos de uso</a></li>
+                    <li><a href="privacidad.html">Politicas de privacidad</a></li>
+                </ul>
+            </div>
+            <div id="f-ayuda-rapida" class="footer-links">
+                <h3>Ayuda rapida</h3>
+                <ul class="footer-detalle">
+                  <li><a href="preuntas-frecuentes.html">Preguntas frecuentes</a></li>
+                    <li><a href="#">+505 7715 3823</a></li>
+                    
+                </ul>
+              </div>
+            <div id="f-promociones" class="footer-links">
+                <h3>Sucribete para recibir promociones y noticias</h3>
+                <div class="input-promociones">
+                        <input type="email" name="" id="" class="txt-correo" placeholder="Ingrese su correo">
+                        <div class="btn-correo">
+                            <a href="" class="btn-correo2"><span class="fa-solid fa-chevron-right"></span></a>
+                        </div>
+                </div>
+                
+                <h3 id="redes">Siguenos en nuestras redes sociales</h3>
+                <div id="redes" class="redes-sociales">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+
+            </div>
+
+            <div id="f-redes-sociales" class="footer-links">
+              <h3>Redes sociales</h3>
+              <div class="redes-sociales">
+                  <a href=""><i class="fab fa-facebook"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+              </div>
+
+          </div>
+
+        </div>
+
+    </div>
+
+</footer>
+</body>
+</html>

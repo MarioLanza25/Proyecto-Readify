@@ -1,0 +1,237 @@
+
+header{
+   padding-left: 5%;
+   padding-right: 5%;
+}
+#cabecer{
+    padding: 0;
+    margin: 0;
+}
+.buscador-libros{
+    display: none;
+}
+.option-mostrar, .option-fecha{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+.optiones-mostrar{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+}
+
+.option-mostrar, .option-fecha{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+.optiones-mostrar{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+}
+
+.option-mostrar, .option-fecha{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+main{
+
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.libros-libro{
+    display: flex;
+    padding-top: 7%;
+    flex-direction: column;
+    padding-bottom: 5%;
+    border-bottom: 1px solid black;
+}
+#libros-libro-ultimo{
+    border-bottom: 0px solid black;
+}
+.libro-imagen-info{
+    display: flex;
+    flex-direction: row;
+}
+.libro-imagen{
+    width: 40%;
+}
+.libro-imagen img{
+    width:100px ;
+    height: 140px;
+}
+.libro-info{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 0;
+}
+.libro-titulo{
+    font-size: 20px;
+    font-weight: bold;
+}
+.libro-info label{
+    margin-bottom: 4%;
+}
+.botones-libros img{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 4%;
+}
+.botones-libros{
+    display: flex;
+    flex-direction: column;
+}
+.btn-leer{
+    
+}
+.btn-leer button{
+    margin-top: 5%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 30px;
+}
+.cambiar-pagina{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 5%;
+
+}
+.cambiar-pagina label{
+    display: flex;
+    border-color: #155B86;
+    background-color: #155B86;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.cambiar-pagina img{
+    height: 34px;
+    width: 20px;
+}
+
+@media (min-width: 481px) {
+    
+    main, header{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .buscador-libros{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 5%;
+    }
+    .optiones-mostrar{
+        display: flex;
+        flex-direction: row;
+        border-bottom: 0px solid black;
+    }
+    
+    .option-mostrar, .option-fecha{
+        width: 35%;
+        height: 35px;
+        margin-right: 10%;
+        border-radius: 10px;
+        margin-bottom: 3%;
+    }
+    .libros{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .libros-libro{
+        border-bottom: 0px solid black;
+    }
+    .botones-libros{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .libro-imagen img{
+        width: 140px;
+        height: 200px;
+    }
+    .libro-imagen-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .libro-titulo{
+        font-size: 18px;
+        width: 200px;
+    }
+    .btn-leer{
+        width: 140px;
+        height: 40px;
+    }
+    .cambiar-pagina{
+        padding-top: 5%;
+    }
+    .buscador-libros{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 4%;
+    }
+    #buscar-libro{
+        width: auto;
+        height: 30px;
+        border-radius: 10px;
+        text-align: center;
+    }
+  }
+  @media (min-width: 769px){
+        header{
+            display: flex;
+            flex-direction: row-reverse;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .libros{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 5%;
+        }
+        .buscador-libros{
+            width: 50%;
+        }
+        .optiones-mostrar{
+            width: 50%;
+
+        }
+
+        .option-mostrar, .option-fecha{
+            width: 40%;
+        }
+        .buscador-libros{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding-top: 4%;
+        }
+        #buscar-libro{
+            width: auto;
+            height: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+  } 

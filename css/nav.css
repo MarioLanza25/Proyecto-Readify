@@ -8,6 +8,9 @@ a{
 nav{
     padding-top: 1%;
 }
+#nav2{
+    display: none;
+}
 #cabecer{
 }
 
@@ -118,18 +121,17 @@ nav{
 .m-detalle{
     font-size: 24px;
 }
+#nav-admin{
+    display: none;
+}
 
-@media (max-width: 720px){
-    .nav-links{
+@media (max-width: 769px){
+    nav{
         display: none;
     }
-    .btn-crear-cuenta{
-        display: none;
-    }
-    .tienes-cuenta li{
-        display: none;
-    }
-    #nombre-empresa{
+    #nav-admin{
         display: block;
+        padding-top: 2%;
+        padding-bottom: 2%;
     }
 }

@@ -20,19 +20,12 @@ a{
   
   .image1 {
     position: relative;
-    width: 43rem;
+    width: 86rem;
     height: 40rem;
-    background-image: url("../imagenes/principal/principal1.png");
+    background-image: url("../imagenes/pexels-tima-miroshnichenko-5198249\ 1.png");
     border-radius: 1px;
   }
 
-  .image2 {
-    position: relative;
-    width: 43rem;
-    height: 40rem;
-    background-image: url("../imagenes/principal/principal2.png");
-    border-radius: 1px;
-  }
 
   .info-centrada {
       position: absolute;
@@ -885,3 +878,4 @@ width: 20%;
         display: none;
     }
 }
+
