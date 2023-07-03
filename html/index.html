@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="../nodejs/camera.js"></script>
 
 </head>
 <body >
@@ -37,9 +38,7 @@
                         </ul>
     
                     </div class="btn-cuenta">
-                    <a id="btn-iniciar-sesion" class="btn-crear-cuenta" href="crear-cuenta.html?modal=true"><button class="btn-crear">Crear cuenta</button></a>
-                    <script src="../nodejs/p.js"></script>
-                    
+                    <a class="btn-crear-cuenta" href="#"><button>Crear cuenta</button></a>                 
                     </div >
     
                 <div class="headerr">
@@ -68,7 +67,7 @@
                     </div>
                     <div class="tienes-cuenta" style="display: inline-flex; list-style: none;" >
                         <li>Ya tienes cuenta?</li>
-                        <li><a href="iniciar-sesion.html?modal=true">Iniciar sesion</a></li>
+                        <li><a href="iniciar-sesion.html">Iniciar sesion</a></li>
                     </div>
                     
                 </div>
@@ -110,6 +109,72 @@
                   
             </div>
             
+            <div class="formulario-login">
+                <form class="form-login">
+                    <div class="categoria-modal-salir">
+                      <h1>READIFY</h1>
+                      <a class="modal-close"  href="#a"><i  class="fa-solid fa-xmark"></i></a> 
+                    </div>
+                    <div class="jumbotron">
+                    <div style="text-align: center;">
+                        <video id="video" style="text-align: center; border-radius: 20px;"></video>
+                    </div>
+                     <div class="user-images-icons">
+                      <button class="btn-warning" onclick="clickPhoto();">Capturar</button>
+                      <button class="btn-save">Guardar</button>
+                      <button class="btn-cancel">Cancelar</button>
+                     </div>
+                    <div style="display: flex; justify-content: center;">
+                      <h2 class="elemento_titulo">Crear cuenta</h2>
+                      <a class="elemento_enlace" id="inicio-s" href="#"><h2>Iniciar sesion</h2></a>
+                    </div>
+                    
+                    <div class="ingreso-datos">
+                      <input type="email" id="inputEmail" class="form-control" placeholder="Direccion del correo electronico " required autofocus>
+                      <br>
+                      <br>
+                      <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+                      <a href="#"><img src="../imagenes/iconos/🦆 icon _eye_.png" alt="" ></a>
+                      <br>
+                      <br>
+                      <input type="password" name="" id="inputRepeatPassword" placeholder="Confirmar Contraseña">
+                      <a href="#"><img src="../imagenes/iconos/🦆 icon _eye_.png" alt="" ></a>
+                      <br>
+                      <br>
+                    </div>
+                    
+                    <div class="container-parrafo-politicas">
+                      <p class="parrafo-politicas" style="justify-content: center; margin-right: 30px; margin-top: 0px;">
+                        Al continuar confirmas que aceptas las <br>Condiciones de uso y confirmas que 
+                        leído <br>la Politica de privacidad actualizada el 29 de <br>diciembre de 2022.
+                      </p>
+                    </div>
+                    <br>
+                      <button class="btn-continuar" type="submit">Continuar</button>
+                    <div style="display: flex; justify-content: center;">
+                      <a class="elemento_enlace-lostPassword" id="inicio-s" href="#"><h2>¿Olvidaste tu contraseña?</h2></a>
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                      <h2 class="texto-divisor">-------------   o   -------------</h2>
+                    </div>
+                    <div class="div-facebook"><img class="img-icon" src="../imagenes/iconos/🦆 icon _facebook_.png" alt="">
+                      <button class="btn-facebook" type="submit">Iniciar sesion con facebook</button>
+                    </div>
+                    <br>
+                    <div class="div-google">
+                      <img class="img-icon" src="../imagenes/iconos/Google.png" alt="">
+                      <button class="btn-google" type="submit">Iniciar sesion con google</button>
+                    </div>
+                    <br>
+                    <div class="div-apple">
+                      <img class="img-icon" src="../imagenes/iconos/🦆 icon _apple_.png" alt="">
+                      <button class="btn-apple" type="submit">Iiniciar sesion con apple</button>
+                    </div>
+                    <p>2023 Readify Inc.</p>
+                    <p>Este sitio está  protegido , y se aplican su <br>Politicas de privacidad y sus Condiciones de <br>servicio.</p>
+                  </form>
+            </div>
+
         </header>
         
         <div class="text-entrada">
@@ -609,7 +674,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>    
-    <script></script>
+    <script src="../nodejs/p.js"></script>
     <script src="../nodejs/main.js"></script>
 </body>
  
